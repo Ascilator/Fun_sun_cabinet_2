@@ -123,28 +123,137 @@
 		</header>
 		<main class="main">
 			<div class="wrapper">
-				<div class="emprass_item_cont">
-					<div class="emprass_header">
-						<div class="item_title">На класическом автомобиле по Москве</div>
-						<div class="like_btn">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22"
-								fill="none">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M12.0001 4.34726L11.0142 3.31546C8.70003 0.893467 4.45665 1.72926 2.92485 4.77425C2.20571 6.20645 2.04345 8.27424 3.35662 10.9132C4.62165 13.4542 7.25349 16.4978 12.0001 19.813C16.7468 16.4978 19.3772 13.4542 20.6436 10.9132C21.9568 8.27284 21.7959 6.20645 21.0754 4.77425C19.5436 1.72926 15.3002 0.892067 12.986 3.31406L12.0001 4.34726ZM12.0001 21.5C-9.08339 7.31525 5.50856 -3.75592 11.7581 2.10026C11.8406 2.17726 11.9218 2.25706 12.0001 2.33966C12.0777 2.25714 12.1584 2.17774 12.2421 2.10166C18.4903 -3.75872 33.0836 7.31385 12.0001 21.5Z"
-									fill="#737373" stroke="#737373" stroke-width="0.3"></path>
-							</svg>
+				<div class="payment_body">
+					<form action="#" class="left_part">
+						<h2 class="part_title">Натали, спасибо за то, что выбрали нас!</h2>
+						<div class="desc">
+							<p class="no_margin">Ты находишься на защищенной страничке оплаты.
+							</p>
+							<p class="no_margin">Мы создали тебе личный кабинет, где после оплаты, появятся детали
+								твоего впечатления!</p>
+							<p>Справой стороны собрана детальная информация по твоему выбору. Пожалуйста, посмотри
+								внимательно состав, а так же, не лишним будет, обратить внимание на условия аннуляции
+							</p>
+							<p>Не забудь заполнить свой ЛК и получить дополнительные бонусы и статусы.</p>
+							<p>До скорых встреч!</p>
 						</div>
-					</div>
+						<h3 class="content_title">Сумма к оплате за выбранные впечатления: 4 000 ₽</h3>
 
-					<div class="empass_main_cont">
-						<div class="left_part">
-							<div class="position">
-								<div class="icon">
-									<img src="img/location.svg" alt="">
-								</div>
-								<div class="text">Турция/Мармарис</div>
+						<div class="radio_row">
+							<div class="input_item">
+								<input type="radio" name="way_to_pay" id="way_1">
+								<label for="way_1">
+									<div class="upper">
+										<div class="icon"></div>
+										<div class="text">Оплатить: <b>4 000 ₽</b></div>
+									</div>
+								</label>
 							</div>
-							<div class="control_panel">
+							<div class="input_item">
+								<input type="radio" name="way_to_pay" id="way_2">
+								<label for="way_2">
+									<div class="upper">
+										<div class="icon"></div>
+										<div class="text">Внести предоплату (50%): <b>4 000 ₽</b></div>
+									</div>
+									<div class="lower">Внимание, данные карты будут сохранены автоматически, а
+										оставшаяся сумма спишется
+										за <b>2 дня</b> до начала «Впечатления»</div>
+								</label>
+							</div>
+						</div>
+						<div class="credit_card">
+							<div class="front">
+								<div class="input_row">
+									<div class="input_title">
+										Номер карты / Card number
+									</div>
+									<div class="input_cont">
+										<div class="input">
+											<input type="text" placeholder="0000 0000 0000 0000">
+										</div>
+									</div>
+								</div>
+								<div class="input_row">
+									<div class="input_title">
+										Срок дейсвия / Valig through
+									</div>
+									<div class="input_cont">
+										<div class="input">
+											<input type="text" placeholder="ММ">
+										</div>
+										<div class="input">
+											<input type="text" placeholder="ГГ">
+										</div>
+									</div>
+								</div>
+								<div class="input_row">
+									<div class="input_title">
+										Владелец карты / Card holder name
+									</div>
+									<div class="input_cont">
+										<div class="input">
+											<input type="text" placeholder="Имя Фамилия / Name Surname">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="back">
+								<div class="gray_strip"></div>
+								<div class="input_row">
+									<div class="input_title">
+										CVV / CVC
+									</div>
+									<div class="input_cont">
+										<div class="input">
+											<input type="text" placeholder="000">
+										</div>
+									</div>
+									<div class="input_sup_title">
+										Последние 3 цифры на полосе подписи
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="credit_controls">
+							<div class="checkbox_item_box">
+								<input id="check_1" type="checkbox">
+								<label for="check_1" class="checkbox_item">
+									<div class="icon">
+										<img src="img/tick.svg" alt="">
+									</div>
+									<div class="text">Cохранить данные карты</div>
+								</label>
+							</div>
+							<div class="checkbox_item_box">
+								<input id="check_2" type="checkbox">
+								<label for="check_2" class="checkbox_item">
+									<div class="icon">
+										<img src="img/tick.svg" alt="">
+									</div>
+									<div class="text">Подтверждаю, что согласен(-а) с договором - публичной офертой
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="submit_cont">
+							<div class="back _white_btn">Назад</div>
+							<div class="pay yellow_btn">Оплатить</div>
+						</div>
+					</form>
+					<div class="right_part">
+						<div class="first_part">
+							<div class="img_emprass">
+								<img src="img/slider_item_img.png" alt="">
+							</div>
+							<div class="desc _big">На класическом автомобиле по москве</div>
+							<div class="stat_part">
+								<div class="geo">
+									<div class="icon">
+										<img src="img/location.svg" alt="">
+									</div>
+									<div class="text">Москва/Россия</div>
+								</div>
 								<div class="stars_cont">
 									<div class="star_icon">
 										<img src="img/star_half.svg" alt="">
@@ -153,256 +262,57 @@
 										7,8 <span>(из 10)</span>
 									</div>
 								</div>
-								<div class="chat_cont">
-									<div class="chat_icon">
-										<img src="img/messege.svg" alt="">
-									</div>
-									<div class="text">12</div>
+							</div>
+							<div class="date_part">
+								<div class="icon">
+									<img src="img/calendar.svg" alt="">
 								</div>
-								<div class="chat_yellow">
-									<div class="chat_icon">
-										<img src="img/yellow_chat.svg" alt="">
+								<div class="text">
+									<div class="date_item">
+										<div class="name">Дата:</div>
+										<div class="value">сб, 23 сентября 2020 г.</div>
 									</div>
-									<div class="text">7,8 <span>(из 10)</span></div>
-									<div class="expert_rait">рейтинг наших экспертов</div>
-								</div>
-								<div class="tags_cont">
-									<div class="tags_icons">
-										<div class="tag_icon">
-											<img src="img/tag_icon_1.svg" alt="">
-										</div>
-										<div class="tag_icon">
-											<img src="img/tag_icon_2.svg" alt="">
-										</div>
-										<div class="tag_icon">
-											<img src="img/tag_icon_1.svg" alt="">
-										</div>
-										<div class="tag_icon">
-											<img src="img/tag_icon_2.svg" alt="">
-										</div>
+									<div class="date_item">
+										<div class="name">Время:</div>
+										<div class="value">12:00 - 14:00</div>
 									</div>
 								</div>
 							</div>
-							<div class="author_emprass _changing_date">
-								<div class="block_header">
-									Впечатление от организатора <span>MAYLIN AND GUILLERMO</span>
-								</div>
-								<div class="block_body">
-									<div class="icons_body">
-										<div class="icon_item">
-											<div class="icon">
-												<img src="img/Clock.svg" alt="">
-											</div>
-											<div class="text">
-												<div class="upper">Длительность</div>
-												<div class="lower">2 часа</div>
-											</div>
-										</div>
-										<div class="icon_item">
-											<div class="icon">
-												<img src="img/menu_item_2.svg" alt="">
-											</div>
-											<div class="text">
-												<div class="upper">Включено</div>
-												<div class="lower">еда, напитки, входные билеты</div>
-											</div>
-										</div>
-
-										<div class="icon_item">
-											<div class="icon">
-												<img src="img/menu_item_5.svg" alt="">
-											</div>
-											<div class="text">
-												<div class="upper">Группа</div>
-												<div class="lower">до 4-х человек</div>
-											</div>
-										</div>
-										<div class="icon_item">
-											<div class="icon">
-												<img src="img/menu_item_6.svg" alt="">
-											</div>
-											<div class="text">
-												<div class="upper">Говорю на</div>
-												<div class="lower">русском, английском</div>
-											</div>
-										</div>
-
-									</div>
-									<div class="author_part">
-										<div class="img">
-											<img src="img/avatar_author.png" alt="">
-										</div>
-										<div class="name">Back edition</div>
-										<div class="role">партнер</div>
-									</div>
-								</div>
-							</div>
-							<div class="what_ll_do">
-								<div class="block_title">Чем займемся</div>
-								<div class="block_desc">
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-										laoreet. Proin gravida dolor sit amet
-										lacus accumsan et viverra justo commodo. Nam fermentum, nulla luctus pharetra
-										vulputate, felis tellus mollis orci, sed
-										rhoncus pronin sapien nunc accuan eget.
-									</p>
-
-									<p>Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
-										rhoncus pronin sapien nunc accuan eget.</p>
-
-									<p>
-										Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
-										parturient montes, nascetur ridiculus mus. Nam
-										fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
-										rhoncus pronin
-									</p>
-									<a href="#" class="and_next">а еще...</a>
-								</div>
-							</div>
-
-
-
 
 						</div>
-						<div class="right_part">
-							<div class="empass_collage _avaluable_data">
-								<div class="col">
-									<img src="img/slider_type_2.png" alt="">
+						<div class="ticket_part">
+							<div class="ticket_title">
+								<div class="name">Выбран:</div>
+								<div class="value">1 билет</div>
+							</div>
+							<div class="price_body">
+								<div class="price_irem">
+									<div class="name">2 000,00 ₽ х 1 гость</div>
+									<div class="value">2 000,00 ₽</div>
 								</div>
-								<div class="col">
-									<img src="img/collage_2.png" alt="">
-								</div>
-								<div class="col">
-									<img src="img/collage_3.png" alt="">
-									<img src="img/collage_4.png" alt="">
+								<div class="total">
+									<div class="name">Итого (RUB)</div>
+									<div class="value">2 000,00 ₽</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="avaluable_data">
-						<div class="block_title">Доступные даты</div>
-						<div class="block_body">
-							<div class="left_calendar">
-								<div class="calendar_header">
-									<div class="arrow_big">
-										<img src="img/big_arrow.svg" alt="">
-									</div>
-									<div class="arrow_small">
-										<img src="img/small_arrow.svg" alt="">
-									</div>
-									<div class="mounth">Январь 2021</div>
-									<div class="arrow_small">
-										<img src="img/small_arrow.svg" alt="">
-									</div>
-									<div class="arrow_big">
-										<img src="img/big_arrow.svg" alt="">
-									</div>
-								</div>
-								<div class="week_days">
-									<div class="week_item">пн</div>
-									<div class="week_item">вт</div>
-									<div class="week_item">ср</div>
-									<div class="week_item">чт</div>
-									<div class="week_item">пт</div>
-									<div class="week_item">сб</div>
-									<div class="week_item">вс</div>
-								</div>
-								<div class="numbers">
-									<div class="number_item_2"></div>
-									<div class="number_item_2"></div>
-									<div class="number_item_2"></div>
-									<div class="number_item_2">1</div>
-									<div class="number_item_2">2</div>
-									<div class="number_item_2">3</div>
-									<div class="number_item_2">4</div>
-									<div class="number_item_2">5</div>
-									<div class="number_item_2">6</div>
-									<div class="number_item_2">7</div>
-									<div class="number_item_2">8</div>
-									<div class="number_item_2 _today">9</div>
-									<div class="number_item_2">10</div>
-									<div class="number_item_2">11</div>
-									<div class="number_item_2">12</div>
-									<div class="number_item_2 _active">13</div>
-									<div class="number_item_2 _active">14</div>
-									<div class="number_item_2">15</div>
-									<div class="number_item_2">16</div>
-									<div class="number_item_2">17</div>
-									<div class="number_item_2">18</div>
-									<div class="number_item_2">19</div>
-									<div class="number_item_2">20</div>
-									<div class="number_item_2">21</div>
-									<div class="number_item_2">22</div>
-									<div class="number_item_2">23</div>
-									<div class="number_item_2">24</div>
-									<div class="number_item_2">25</div>
-									<div class="number_item_2">26</div>
-									<div class="number_item_2">27</div>
-									<div class="number_item_2">28</div>
-								</div>
+						<div class="we_always_here">
+							<div class="part_title _bold">Мы всегда рядом! Служба поддержки</div>
+							<div class="desc">Позвонить нам, можно по телефону:
+								+8 (800) ХХХ‑ХХ‑ХХ (c 08:00 до 16:00 по Москве)</div>
+							<div class="write_us">
+								<div class="text">Написать нам, можно</div>
+								<div class="yellow_btn">Чат с техподдержкой</div>
 							</div>
-							<div class="right_dates">
-								<div class="part_title">Для этой даты доступны следующие виды бронирования</div>
-								<div class="input_date">
-									<input type="date" placeholder="22.01.2021">
-								</div>
-								<div class="variable_cont">
-									<div class="var_item">
-										<div class="time_cont">
-											<div class="text">11:00</div>
-											<div class="icon">
-												<img src="img/Clock.svg" alt="">
-											</div>
-										</div>
-										<div class="tags">
-											<div class="tag">2 места</div>
-											<div class="tag">2 места</div>
-											<div class="tag">2 места</div>
-										</div>
-									</div>
-									<div class="var_item">
-										<div class="time_cont">
-											<div class="text">11:00</div>
-											<div class="icon">
-												<img src="img/Clock.svg" alt="">
-											</div>
-										</div>
-										<div class="tags">
-											<div class="tag">2 места</div>
-											<div class="tag">2 места</div>
-											<div class="tag">2 места</div>
-										</div>
-									</div>
-									<div class="var_item">
-										<div class="time_cont">
-											<div class="text">11:00</div>
-											<div class="icon">
-												<img src="img/Clock.svg" alt="">
-											</div>
-										</div>
-										<div class="tags">
-											<div class="tag">2 места</div>
-											<div class="tag">2 места</div>
-											<div class="tag">2 места</div>
-										</div>
-									</div>
-									<div class="var_item">
-										<div class="time_cont">
-											<div class="text">11:00</div>
-											<div class="icon">
-												<img src="img/Clock.svg" alt="">
-											</div>
-										</div>
-										<div class="tags">
-											<div class="tag">2 места</div>
-											<div class="tag">2 места</div>
-											<div class="tag">2 места</div>
-										</div>
-									</div>
-								</div>
+							<div class="mail">email@email.gmail.com</div>
+							<div class="canceling">
+								<div class="cancel_title">Правила отмены:</div>
+								<div class="desc">Впечатление можно отменить в течение 24 часов после оплаты или за 7
+									дней до начала и получить полный возврат.</div>
+								<a href="#" class="learn_more">Подробнее</a>
 							</div>
 						</div>
+
 					</div>
 				</div>
 
@@ -532,52 +442,6 @@
 		</footer>
 	</div>
 
-	<div class="upload_photo_cont _popup">
-		<div class="content_box">
-			<div class="cross"></div>
-			<div class="popup_header">Выбор фотографии профиля</div>
-			<form action="#" class="upload" id="upload_img_form">
-				<input type="file" id="upload_img">
-				<label for="upload_img" class="label">
-					<div class="item_mein_part">
-						<div class="p">
-							Перетащите сюда файл для загрузки
-							(в формате .jpg, .png, jpeg) <br>
-							или
-						</div>
-						<div class="choose_fiel">Выберите файл на компьютере</div>
-					</div>
-				</label>
-				<div class="uploaded_img">
-					<div class="tip _active">
-						<div class="icon">
-							<img src="img/Arrows move.svg" alt="">
-						</div>
-						<div class="text">Перетащите, чтобы изменить положение</div>
-					</div>
-					<div class="back">
-
-					</div>
-					<div class="front">
-
-						<div class="img"></div>
-					</div>
-				</div>
-				<div class="img_name"></div>
-				<div class="cross">
-					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M15.7609 15.7669C15.6853 15.8408 15.5955 15.8994 15.4966 15.9394C15.3978 15.9794 15.2918 16 15.1847 16C15.0777 16 14.9717 15.9794 14.8728 15.9394C14.7739 15.8994 14.6841 15.8408 14.6085 15.7669L7.99982 9.32227L1.39113 15.7669C1.23832 15.9159 1.03105 15.9996 0.814937 15.9996C0.598822 15.9996 0.391558 15.9159 0.238741 15.7669C0.0859251 15.6179 7.33805e-05 15.4158 7.33616e-05 15.2051C7.33428e-05 14.9944 0.085925 14.7924 0.238741 14.6434L7.42363 7.6386C7.49923 7.56471 7.58903 7.50608 7.68791 7.46609C7.78678 7.42609 7.89278 7.4055 7.99982 7.4055C8.10687 7.4055 8.21287 7.42609 8.31174 7.46609C8.41061 7.50608 8.50042 7.56471 8.57602 7.6386L15.7609 14.6434C15.8367 14.7171 15.8968 14.8047 15.9379 14.901C15.9789 14.9974 16 15.1008 16 15.2051C16 15.3095 15.9789 15.4128 15.9379 15.5092C15.8968 15.6056 15.8367 15.6932 15.7609 15.7669Z"
-							fill="#737373" />
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M0.239094 0.233101C0.314692 0.159211 0.4045 0.100588 0.503373 0.0605881C0.602246 0.0205886 0.708242 -5.99052e-08 0.81529 -6.89596e-08C0.922337 -7.8014e-08 1.02833 0.0205886 1.12721 0.060588C1.22608 0.100587 1.31589 0.159211 1.39149 0.233101L8.00018 6.67773L14.6089 0.2331C14.7617 0.0841139 14.9689 0.000413998 15.1851 0.000413981C15.4012 0.000413964 15.6084 0.0841139 15.7613 0.2331C15.9141 0.382086 15.9999 0.584155 15.9999 0.794853C15.9999 1.00555 15.9141 1.20762 15.7613 1.35661L8.57637 8.3614C8.50077 8.43529 8.41097 8.49392 8.31209 8.53391C8.21322 8.57391 8.10722 8.5945 8.00018 8.5945C7.89313 8.5945 7.78713 8.57391 7.68826 8.53391C7.58939 8.49392 7.49958 8.43529 7.42398 8.3614L0.239094 1.35661C0.163305 1.2829 0.103174 1.19535 0.0621459 1.09895C0.0211181 1.00256 8.12516e-08 0.899219 7.18214e-08 0.794855C6.23913e-08 0.69049 0.0211181 0.587151 0.0621459 0.490756C0.103174 0.394361 0.163305 0.306805 0.239094 0.233101Z"
-							fill="#737373" />
-					</svg>
-
-				</div>
-			</form>
-		</div>
-	</div>
 	<div class="choose_town">
 		<div class="choose_content_box">
 			<div class="choose_header">
