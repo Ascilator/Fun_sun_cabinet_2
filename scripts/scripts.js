@@ -130,6 +130,9 @@
         $(this).parent().addClass('_active');
 
     })
+    $('#check_2').click(function () {
+        $('.visible').toggleClass('_active');
+    })
     $('.search_row>input').on('blur', function () {
         $(this).parent().removeClass('_active');
     })
