@@ -935,37 +935,111 @@
             $(this).parent().toggleClass('_active');
         })
     }
-    $('.empass_slider_body').slick({
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        nextArrow: $('.slider_empass_arrows').children().eq(0),
-        prevArrow: $('.slider_empass_arrows').children().eq(1),
-        dots: true,
-        appendDots: $('.empass_slider_dots'),
-        responsive: [
-            {
-                breakpoint: 1100,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
+    if ($('.empass_slider_body').length) {
+        $('.empass_slider_body').slick({
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            nextArrow: $('.slider_empass_arrows').children().eq(0),
+            prevArrow: $('.slider_empass_arrows').children().eq(1),
+            dots: true,
+            appendDots: $('.empass_slider_dots'),
+            responsive: [
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    },
                 },
-            },
-            {
-                breakpoint: 800,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
                 },
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
                 },
-            },
-        ]
-    })
+            ]
+        })
+    }
+
+    if ($('.messege_apll').length) {
+        let search_messege = (text) => {
+            $('.messege_item').removeClass('_founded');
+            for (let i = 0; i < $('.messege_item').length; i++) {
+                let index = $('.messege_item').eq(i).text().indexOf(text);
+                if (index != -1) {
+                    $('.messege_item').eq(i).addClass('_founded');
+                }
+            }
+        }
+        let messege_block = () => {
+            $('.search_messege>input').change(function () {
+                search_messege($(this).val());
+            })
+            $('.search_messege').on('submit', function (e) {
+                e.preventDefault();
+                search_messege($(this).children('input').val());
+            })
+
+        }
+        let submit_messege = () => {
+            $('._messeg').on('click', function () {
+                if ($('#messege').val().length != 0) {
+                    create_messege($('#messege').val(), $('#messege'));
+                }
+            });
+            $('#messege').on('keydown', function (e) {
+
+                if (e.keyCode === 13) {
+                    create_messege($('#messege').val(), $('#messege'));
+                }
+            });
+        }
+        let create_messege = (text, textarea) => {
+
+            var messege = $('.messege_block._my').eq(0).clone();
+            let html_item = [`<div class="messege_block _my">
+										<div class="avatar">
+											<img src="img/avatar.png" alt="">
+										</div>
+										<div class="text_content">
+											<div class="type">Тип: позитив, гости [id 2342]</div>
+											<div class="messege_item">Привет, Александр! Отличное начало, не забудь
+												поставить им оценки</div>
+											<div class="date">01.07.2020 14:22</div>
+										</div>
+                                    </div>`];
+            html_item = html_item.join(' ');
+            html_item = $(html_item);
+
+            html_item.children('.text_content').children('.messege_item').text(text);
+            $('.messege_body').append(html_item);
+
+            $('.messege_body').scrollTop($('.messege_body').prop('scrollHeight'));
+            $('.messege_item').removeClass('_founded');
+            textarea.val('');
+            textarea.focus();
+        }
+        let destroy_messege = () => {
+            $('.dialog_item').on('click', function () {
+                $('.dialog_item').not(this).removeClass('_current');
+                $(this).addClass('_current');
+                $('.messege_container').empty();
+            });
+        }
+
+        destroy_messege();
+        submit_messege();
+        messege_block();
+
+    }
     add_criteri();
     accordeon();
     //graph_col();
